@@ -1,5 +1,5 @@
 import { health } from '~/src/api/health/index.js'
-import { example } from '~/src/api/example/index.js'
+import { analyse } from './analyse/index.js'
 
 const router = {
   plugin: {
@@ -9,7 +9,7 @@ const router = {
       await server.register([health])
 
       // Application specific routes, add your own routes here.
-      await server.register([example])
+      await server.register([analyse])
     }
   }
 }
