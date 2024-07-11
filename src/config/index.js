@@ -73,6 +73,29 @@ const config = convict({
     nullable: true,
     default: null,
     env: 'CDP_HTTPS_PROXY'
+  },
+  aws: {
+    accessKey: {
+      doc: 'AWS Access Key',
+      format: String,
+      nullable: true,
+      default: null,
+      env: 'AWS_ACCESS_KEY'
+    },
+    secretKey: {
+      doc: 'AWS Secret Key',
+      format: String,
+      nullable: true,
+      default: null,
+      env: 'AWS_SECRET_KEY'
+    },
+    region: {
+      doc: 'AWS Region',
+      format: String,
+      nullable: true,
+      default: null,
+      env: 'AWS_REGION'
+    }
   }
 })
 
